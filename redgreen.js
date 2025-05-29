@@ -1,12 +1,16 @@
-function countVowels (str,count) {
-    if (str.includes("a", "e", "i", "o", "u"));
-        for (let i = 0; i < array.length; i++) {
-    if (array[i] === target) {
-      count++;
+function countVowels (str) {
+  const vowels = 'aeiou';
+  let count = 0
+    for (let char of str.toLowerCase()) {
+      if (vowels.includes(char)) {
+        count++;
+      }
     }
+    return count;
   }
-  return count;
-}
+
+
+console.log(countVowels("Batman"));
 
 module.exports = {
     countVowels
